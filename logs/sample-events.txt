@@ -1,0 +1,45 @@
+Event ID 4688 — Process Creation
+
+LogName=Security
+SourceName=Microsoft-Windows-Security-Auditing
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=DESKTOP-NOAH
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=102394
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+    Security ID:        S-1-5-21-1234567890-1234567890-1234567890-1001
+    Account Name:       noah
+    Account Domain:     DESKTOP-NOAH
+    Logon ID:           0x12345
+
+Process Information:
+    New Process ID:     0x2f4
+    New Process Name:   C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+    Token Elevation Type: TokenElevationTypeLimited
+    Creator Process ID: 0x1a0
+    Command Line:       powershell.exe -ExecutionPolicy Bypass -NoProfile -WindowStyle Hidden -Command "Get-Process"
+
+
+
+Event ID 4104 — PowerShell Script Block Logging
+
+LogName=Microsoft-Windows-PowerShell/Operational
+SourceName=PowerShell
+EventCode=4104
+EventType=0
+Type=Information
+ComputerName=DESKTOP-NOAH
+TaskCategory=Executing Pipeline
+OpCode=Info
+RecordNumber=20483
+Message=Creating Scriptblock text (1 of 1):
+
+ScriptBlock ID: 3c2a1b9f-1234-5678-9abc-001122334455
+ScriptBlock Text:
+Get-Process
